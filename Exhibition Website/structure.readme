@@ -1,0 +1,26 @@
+ai-security-website/
+├── index.html
+├── pages/
+│   ├── research.html
+│   ├── turing-test.html
+│   ├── ethics.html
+│   ├── cybersecurity.html
+│   └── future.html
+├── css/
+│   ├── style.css
+│   └── animations.css
+├── js/
+│   ├── script.js
+│   ├── particles.js
+│   └── games.js
+├── images/
+│   ├── hero-bg.jpg
+│   ├── research-bg.jpg
+│   ├── cybersecurity-bg.jpg
+│   ├── turing-test-bg.jpg
+│   ├── ethics-bg.jpg
+│   ├── future-bg.jpg
+│   ├── network-visual.jpg
+│   ├── ai-brain.jpg
+│   └── security-shield.jpg
+└── vercel.json

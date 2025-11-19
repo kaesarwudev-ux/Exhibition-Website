@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Security | Group 12 - Bucklands Beach Intermediate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">AI</span>
+                    <span class="logo-subtext">Security</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <span class="link-text">Home</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="pages/research.html" class="nav-link">
+                    <span class="link-text">Research</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="pages/cybersecurity.html" class="nav-link">
+                    <span class="link-text">Cybersecurity</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="pages/turing-test.html" class="nav-link">
+                    <span class="link-text">Turing Test</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="pages/ethics.html" class="nav-link">
+                    <span class="link-text">Ethics</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="pages/future.html" class="nav-link">
+                    <span class="link-text">Future</span>
+                    <span class="link-underline"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word title-word-1">AI</span>
+                    <span class="title-word title-word-2">in</span>
+                    <span class="title-word title-word-3">Security</span>
+                </h1>
+                <p class="hero-subtitle">Exploring how AI shapes modern-day cybersecurity</p>
+                <p class="hero-description">Group 12 - Bucklands Beach Intermediate</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <span>Explore Our Project</span>
+                        <div class="btn-hover-effect"></div>
+                    </a>
+                    <a href="pages/research.html" class="btn btn-secondary">
+                        <span>View Research</span>
+                        <div class="btn-hover-effect"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="ai-network">
+                        <div class="network-node node-1"></div>
+                        <div class="network-node node-2"></div>
+                        <div class="network-node node-3"></div>
+                        <div class="network-node node-4"></div>
+                        <div class="network-node node-5"></div>
+                        <div class="network-connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Project</h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-dot"></div>
+                    <div class="divider-line"></div>
+                </div>
+                <p class="section-subtitle">Central Idea: AI shapes modern-day cybersecurity</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">Line of Inquiry 1</h3>
+                    <p class="card-text">An inquiry into the different methods of cybersecurity</p>
+                    <div class="card-footer">
+                        <span class="concept-tag">Function</span>
+                    </div>
+                    <div class="card-hover"></div>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="card-title">Line of Inquiry 2</h3>
+                    <p class="card-text">An inquiry into the ethical use and future of AI</p>
+                    <div class="card-footer">
+                        <span class="concept-tag">Responsibility</span>
+                        <span class="concept-tag">Change</span>
+                    </div>
+                    <div class="card-hover"></div>
+                </div>
+                
+                <!-- Easter Egg 1: Secret Game Trigger -->
+                <div class="about-card secret-game-trigger" id="secretGame">
+                    <div class="card-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="card-title">Special Findings</h3>
+                    <p class="card-text">Click to discover a hidden perspective on AI</p>
+                    <div class="card-footer">
+                        <span class="concept-tag">Easter Egg</span>
+                    </div>
+                    <div class="card-hover"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Highlights</h2>
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-dot"></div>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+            
+            <div class="highlights-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <h3>AI in Defensive Security</h3>
+                            <p>Machine learning enables AI systems to identify threats and anomalies with greater speed and accuracy than human operators.</p>
+                            <a href="pages/research.html" class="slide-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h3>Ethical Considerations</h3>
+                            <p>How can we use AI ethically to ensure safety for all? Explore the responsibilities of companies and individuals.</p>
+                            <a href="pages/ethics.html" class="slide-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <h3>The Turing Test</h3>
+                            <p>Our interactive element explores Alan Turing's test for machine intelligence and its relevance today.</p>
+                            <a href="pages/turing-test.html" class="slide-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Element Preview -->
+    <section class="interactive-preview">
+        <div class="container">
+            <div class="preview-content">
+                <div class="preview-text">
+                    <h2>Experience Our Turing Test</h2>
+                    <p>Try our interactive recreation of the Turing Test, where you'll attempt to distinguish between human and AI responses.</p>
+                    <a href="pages/turing-test.html" class="btn btn-glow">
+                        <span>Try It Now</span>
+                        <div class="btn-sparkle"></div>
+                    </a>
+                </div>
+                <div class="preview-visual">
+                    <div class="turing-visual">
+                        <div class="human-side">
+                            <div class="avatar human-avatar"></div>
+                            <span>Human</span>
+                        </div>
+                        <div class="ai-side">
+                            <div class="avatar ai-avatar"></div>
+                            <span>AI</span>
+                        </div>
+                        <div class="question-bubble"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easter Egg 2: Konami Code Game -->
+    <div id="konamiGame" class="easter-egg-game hidden">
+        <div class="game-container">
+            <div class="game-header">
+                <h3>AI Security Challenge</h3>
+                <button id="closeGame" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="game-content">
+                <p>Defend the network! Click on the incoming cyber threats before they reach the core.</p>
+                <div class="game-stats">
+                    <span>Score: <span id="gameScore">0</span></span>
+                    <span>Lives: <span id="gameLives">3</span></span>
+                </div>
+                <div id="gameArea" class="game-area"></div>
+                <button id="startGame" class="btn btn-primary">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Security</h3>
+                    <p>Group 12 Exhibition Project<br>Bucklands Beach Intermediate</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/research.html">Research</a></li>
+                        <li><a href="pages/cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="pages/turing-test.html">Turing Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Research Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/ethics.html">AI Ethics</a></li>
+                        <li><a href="pages/future.html">Future of AI</a></li>
+                        <li><a href="pages/research.html">Methodologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group 12 - Bucklands Beach Intermediate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

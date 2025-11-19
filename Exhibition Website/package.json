@@ -1,0 +1,13 @@
+{
+  "name": "ai-in-security-website",
+  "version": "1.0.0",
+  "description": "Group 12 Exhibition Project - AI in Security",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p public && cp -r *.html css/ js/ images/ pages/ public/ || true",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": ["ai", "security", "exhibition", "website"],
+  "author": "Group 12 - Bucklands Beach Intermediate",
+  "license": "MIT"
+}

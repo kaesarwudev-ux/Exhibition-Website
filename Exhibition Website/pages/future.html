@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of AI - AI in Security | Group 12</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-text">AI</span>
+                    <span class="logo-subtext">Security</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <span class="link-text">Home</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="research.html" class="nav-link">
+                    <span class="link-text">Research</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="cybersecurity.html" class="nav-link">
+                    <span class="link-text">Cybersecurity</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="turing-test.html" class="nav-link">
+                    <span class="link-text">Turing Test</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="ethics.html" class="nav-link">
+                    <span class="link-text">Ethics</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="future.html" class="nav-link active">
+                    <span class="link-text">Future</span>
+                    <span class="link-underline"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="hero-title">Future of AI</h1>
+                <p class="hero-subtitle">Exploring the potential and challenges of artificial intelligence</p>
+            </div>
+        </section>
+
+        <section class="future-content">
+            <div class="container">
+                <div class="future-predictions">
+                    <h2>AI Development Timeline</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">
+                                <h4>Advanced AI Assistants</h4>
+                                <p>AI becomes deeply integrated into daily life, with personalized assistants that anticipate needs and automate routine tasks.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2030</div>
+                            <div class="timeline-content">
+                                <h4>AI in Healthcare</h4>
+                                <p>AI systems assist in medical diagnosis, drug discovery, and personalized treatment plans, revolutionizing healthcare.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2035</div>
+                            <div class="timeline-content">
+                                <h4>Autonomous Systems</h4>
+                                <p>Fully autonomous vehicles, drones, and robotic systems become commonplace, transforming transportation and logistics.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2040+</div>
+                            <div class="timeline-content">
+                                <h4>Artificial General Intelligence</h4>
+                                <p>The potential emergence of AGI systems with human-like reasoning capabilities across multiple domains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-challenges">
+                    <h2>Key Challenges & Opportunities</h2>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <h4>🤖 Job Market Transformation</h4>
+                            <p>AI will automate many routine tasks while creating new roles in AI development, maintenance, and ethics oversight.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>🔐 Cybersecurity Evolution</h4>
+                            <p>AI-powered security systems will defend against increasingly sophisticated AI-generated cyber threats.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>⚖️ Regulatory Frameworks</h4>
+                            <p>Developing comprehensive laws and regulations to govern AI development and deployment while encouraging innovation.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>🌍 Global Collaboration</h4>
+                            <p>International cooperation will be essential to establish standards and prevent AI arms races.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Future Predictor -->
+                <div class="future-predictor">
+                    <h2>AI Future Predictor</h2>
+                    <p>Explore possible AI futures based on current trends:</p>
+                    
+                    <div class="predictor-interface">
+                        <div class="prediction-controls">
+                            <label for="techAdvancement">Technological Advancement:</label>
+                            <input type="range" id="techAdvancement" min="1" max="10" value="5">
+                            
+                            <label for="regulationLevel">Regulation Level:</label>
+                            <input type="range" id="regulationLevel" min="1" max="10" value="5">
+                            
+                            <label for="adoptionSpeed">Adoption Speed:</label>
+                            <input type="range" id="adoptionSpeed" min="1" max="10" value="5">
+                        </div>
+                        
+                        <button id="generatePrediction" class="btn btn-primary">Generate Prediction</button>
+                        
+                        <div class="prediction-result hidden" id="predictionResult">
+                            <h4>Your AI Future:</h4>
+                            <p id="futureScenario"></p>
+                            <div class="future-visualization">
+                                <div class="future-node" id="futureNode1"></div>
+                                <div class="future-node" id="futureNode2"></div>
+                                <div class="future-node" id="futureNode3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easter Egg: Secret Message from the Future -->
+                <div class="future-message" id="futureMessage">
+                    <h3>📜 Message from 2045</h3>
+                    <p>"The key to harmonious AI development was education. We learned that understanding creates trust, and trust enables progress."</p>
+                    <p class="message-signature">- AI Ethics Council, 2045</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Security</h3>
+                    <p>Group 12 Exhibition Project<br>Bucklands Beach Intermediate</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="turing-test.html">Turing Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Research Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="ethics.html">AI Ethics</a></li>
+                        <li><a href="future.html">Future of AI</a></li>
+                        <li><a href="research.html">Methodologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group 12 - Bucklands Beach Intermediate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/games.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Test - AI in Security | Group 12</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-text">AI</span>
+                    <span class="logo-subtext">Security</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <span class="link-text">Home</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="research.html" class="nav-link">
+                    <span class="link-text">Research</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="cybersecurity.html" class="nav-link">
+                    <span class="link-text">Cybersecurity</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="turing-test.html" class="nav-link active">
+                    <span class="link-text">Turing Test</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="ethics.html" class="nav-link">
+                    <span class="link-text">Ethics</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="future.html" class="nav-link">
+                    <span class="link-text">Future</span>
+                    <span class="link-underline"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="hero-title">The Turing Test</h1>
+                <p class="hero-subtitle">Exploring machine intelligence and human-AI interaction</p>
+            </div>
+        </section>
+
+        <section class="turing-content">
+            <div class="container">
+                <div class="turing-intro">
+                    <h2>What is the Turing Test?</h2>
+                    <p>The Turing Test, proposed by Alan Turing in 1950, is a test of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.</p>
+                </div>
+
+                <div class="turing-experiment">
+                    <h3>Interactive Turing Test</h3>
+                    <p>Try to determine which responses are from a human and which are from AI:</p>
+                    
+                    <div class="test-interface">
+                        <div class="conversation-area" id="conversationArea">
+                            <!-- Messages will be added here by JavaScript -->
+                        </div>
+                        
+                        <div class="control-panel">
+                            <button id="startTest" class="btn btn-primary">Start Test</button>
+                            <button id="humanResponse" class="btn btn-secondary" disabled>Human Response</button>
+                            <button id="aiResponse" class="btn btn-secondary" disabled>AI Response</button>
+                            <button id="nextQuestion" class="btn btn-outline" disabled>Next Question</button>
+                        </div>
+                        
+                        <div class="results-panel hidden" id="resultsPanel">
+                            <h4>Your Results</h4>
+                            <p>Correct guesses: <span id="correctCount">0</span>/5</p>
+                            <p id="resultMessage"></p>
+                            <button id="restartTest" class="btn btn-primary">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="turing-history">
+                    <h3>Historical Context</h3>
+                    <div class="history-timeline">
+                        <div class="timeline-event">
+                            <div class="event-year">1950</div>
+                            <div class="event-content">
+                                <h4>Original Paper Published</h4>
+                                <p>Alan Turing publishes "Computing Machinery and Intelligence" introducing the Turing Test</p>
+                            </div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-year">2014</div>
+                            <div class="event-content">
+                                <h4>Eugene Goostman</h4>
+                                <p>A computer program simulating a 13-year-old Ukrainian boy passes the Turing Test by convincing 33% of judges</p>
+                            </div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-year">2023</div>
+                            <div class="event-content">
+                                <h4>Modern AI Systems</h4>
+                                <p>Advanced language models like GPT-4 demonstrate human-like conversation capabilities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easter Egg: Hidden Alan Turing Quote -->
+                <div class="easter-egg-quote" id="turingQuote">
+                    <blockquote>
+                        "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+                        <footer>- Alan Turing</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Security</h3>
+                    <p>Group 12 Exhibition Project<br>Bucklands Beach Intermediate</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="turing-test.html">Turing Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Research Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="ethics.html">AI Ethics</a></li>
+                        <li><a href="future.html">Future of AI</a></li>
+                        <li><a href="research.html">Methodologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group 12 - Bucklands Beach Intermediate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/games.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

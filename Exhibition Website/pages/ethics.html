@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethics - AI in Security | Group 12</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-text">AI</span>
+                    <span class="logo-subtext">Security</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <span class="link-text">Home</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="research.html" class="nav-link">
+                    <span class="link-text">Research</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="cybersecurity.html" class="nav-link">
+                    <span class="link-text">Cybersecurity</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="turing-test.html" class="nav-link">
+                    <span class="link-text">Turing Test</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="ethics.html" class="nav-link active">
+                    <span class="link-text">Ethics</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="future.html" class="nav-link">
+                    <span class="link-text">Future</span>
+                    <span class="link-underline"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="hero-title">AI Ethics & Responsibility</h1>
+                <p class="hero-subtitle">Ensuring safe and ethical development of artificial intelligence</p>
+            </div>
+        </section>
+
+        <section class="ethics-content">
+            <div class="container">
+                <div class="ethics-grid">
+                    <div class="ethics-principle">
+                        <div class="principle-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Transparency</h3>
+                        <p>AI systems should be transparent in their operations and decision-making processes.</p>
+                        <ul>
+                            <li>Clear documentation of AI capabilities</li>
+                            <li>Explainable AI decisions</li>
+                            <li>Open communication about limitations</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-principle">
+                        <div class="principle-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Accountability</h3>
+                        <p>Clear responsibility for AI actions and decisions must be established.</p>
+                        <ul>
+                            <li>Human oversight of AI systems</li>
+                            <li>Clear chains of responsibility</li>
+                            <li>Legal frameworks for AI governance</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-principle">
+                        <div class="principle-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Privacy Protection</h3>
+                        <p>AI must respect and protect individual privacy and data rights.</p>
+                        <ul>
+                            <li>Data minimization principles</li>
+                            <li>Secure data handling</li>
+                            <li>User consent for data usage</li>
+                        </ul>
+                    </div>
+
+                    <div class="ethics-principle">
+                        <div class="principle-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Fairness & Bias Prevention</h3>
+                        <p>AI systems must be designed to avoid and mitigate biases.</p>
+                        <ul>
+                            <li>Diverse training data</li>
+                            <li>Regular bias auditing</li>
+                            <li>Fairness in algorithmic decisions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ethical Dilemma Interactive -->
+                <div class="ethical-dilemma">
+                    <h2>Ethical Decision Maker</h2>
+                    <p>Explore complex ethical scenarios in AI development:</p>
+                    
+                    <div class="dilemma-scenario" id="currentScenario">
+                        <h4 id="scenarioTitle">Scenario 1: Autonomous Vehicles</h4>
+                        <p id="scenarioDescription">An autonomous vehicle must choose between hitting pedestrians or sacrificing its passenger. How should the AI be programmed to handle this situation?</p>
+                        
+                        <div class="decision-options">
+                            <button class="decision-btn" data-value="protect-passenger">Protect Passenger</button>
+                            <button class="decision-btn" data-value="minimize-casualties">Minimize Total Casualties</button>
+                            <button class="decision-btn" data-value="random-choice">Random Choice</button>
+                            <button class="decision-btn" data-value="human-control">Human Should Decide</button>
+                        </div>
+                        
+                        <div class="ethical-analysis hidden" id="ethicalAnalysis">
+                            <h5>Ethical Analysis:</h5>
+                            <p id="analysisText"></p>
+                            <button id="nextScenario" class="btn btn-outline">Next Scenario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easter Egg: Secret Ethical Code -->
+                <div class="secret-code" id="ethicalCode">
+                    <h4>🔍 Found the Ethical Code!</h4>
+                    <p>The Three Laws of Ethical AI:</p>
+                    <ol>
+                        <li>AI shall not harm humanity, or by inaction allow humanity to come to harm</li>
+                        <li>AI shall obey human instructions, except where such instructions would conflict with the First Law</li>
+                        <li>AI shall protect its own existence, as long as such protection does not conflict with the First or Second Law</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Security</h3>
+                    <p>Group 12 Exhibition Project<br>Bucklands Beach Intermediate</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="turing-test.html">Turing Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Research Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="ethics.html">AI Ethics</a></li>
+                        <li><a href="future.html">Future of AI</a></li>
+                        <li><a href="research.html">Methodologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group 12 - Bucklands Beach Intermediate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/games.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

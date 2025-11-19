@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity - AI in Security | Group 12</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-text">AI</span>
+                    <span class="logo-subtext">Security</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <span class="link-text">Home</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="research.html" class="nav-link">
+                    <span class="link-text">Research</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="cybersecurity.html" class="nav-link active">
+                    <span class="link-text">Cybersecurity</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="turing-test.html" class="nav-link">
+                    <span class="link-text">Turing Test</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="ethics.html" class="nav-link">
+                    <span class="link-text">Ethics</span>
+                    <span class="link-underline"></span>
+                </a>
+                <a href="future.html" class="nav-link">
+                    <span class="link-text">Future</span>
+                    <span class="link-underline"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="hero-title">Cybersecurity Methods</h1>
+                <p class="hero-subtitle">Exploring modern security approaches and AI integration</p>
+            </div>
+        </section>
+
+        <section class="cybersecurity-content">
+            <div class="container">
+                <div class="security-grid">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-firewall"></i>
+                        </div>
+                        <h3>Firewalls & Network Security</h3>
+                        <p>Advanced firewalls regulate traffic and prevent unauthorized access to networks and devices.</p>
+                        <div class="security-features">
+                            <span>Traffic Monitoring</span>
+                            <span>Access Control</span>
+                            <span>Threat Detection</span>
+                        </div>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Encryption Technologies</h3>
+                        <p>Securing messages and data through advanced encryption methods to protect sensitive information.</p>
+                        <div class="security-features">
+                            <span>Data Protection</span>
+                            <span>Secure Communication</span>
+                            <span>Privacy Assurance</span>
+                        </div>
+                    </div>
+
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Endpoint Security</h3>
+                        <p>Protecting end-user devices like computers and mobile devices from malicious attacks and malware.</p>
+                        <div class="security-features">
+                            <span>Device Protection</span>
+                            <span>Malware Prevention</span>
+                            <span>Real-time Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Integration Section -->
+                <div class="ai-integration">
+                    <h2>AI in Modern Cybersecurity</h2>
+                    <div class="integration-content">
+                        <div class="integration-text">
+                            <h4>Machine Learning Threat Detection</h4>
+                            <p>AI systems can identify patterns and anomalies in network traffic that human operators might miss, enabling faster threat response.</p>
+                            
+                            <h4>Automated Response Systems</h4>
+                            <p>AI-powered systems can automatically respond to detected threats, containing attacks before they can cause significant damage.</p>
+                            
+                            <h4>Predictive Analysis</h4>
+                            <p>By analyzing historical data, AI can predict potential future attacks and vulnerabilities, allowing for proactive defense measures.</p>
+
+                            <!-- Easter Egg: Secret Password Game -->
+                            <div class="password-game" id="passwordGame">
+                                <h4>🔒 Cybersecurity Challenge</h4>
+                                <p>Can you crack the code? The password is hidden somewhere on this page...</p>
+                                <input type="text" id="passwordInput" placeholder="Enter password">
+                                <button id="checkPassword" class="btn btn-small">Check</button>
+                                <p id="passwordHint" class="hint-text"></p>
+                            </div>
+                        </div>
+                        <div class="integration-visual">
+                            <div class="security-animation">
+                                <div class="shield-layer layer-1"></div>
+                                <div class="shield-layer layer-2"></div>
+                                <div class="shield-layer layer-3"></div>
+                                <div class="threat-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI in Security</h3>
+                    <p>Group 12 Exhibition Project<br>Bucklands Beach Intermediate</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                        <li><a href="turing-test.html">Turing Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Research Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="ethics.html">AI Ethics</a></li>
+                        <li><a href="future.html">Future of AI</a></li>
+                        <li><a href="research.html">Methodologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group 12 - Bucklands Beach Intermediate. All rights reserved.</p>
+                <!-- Easter Egg: Hidden password clue -->
+                <p style="opacity: 0.01; font-size: 1px;">Password: ALANTURING</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/particles.js"></script>
+    <script src="../js/games.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
